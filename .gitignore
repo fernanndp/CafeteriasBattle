@@ -1,0 +1,23 @@
+# Ambiente virtual
+venv/
+env/
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*.log
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# IDEs e editores de texto
+.vscode/
+.idea/
+
+# Node.js (caso use assets front-end)
+node_modules/
+
+# Outros arquivos
+static/*.map
+*.sqlite3
