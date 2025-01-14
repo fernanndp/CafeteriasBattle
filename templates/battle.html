@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalha de Cafeterias</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Batalha de Cafeterias!</h1>
+    <p>Escolha sua favorita!</p>
+    <div class="container">
+        <div class="cafeteria-card">
+            <h2>{{ cafeteria1["name"] }}</h2>
+            <img src="{{ cafeteria1["image"] }}" alt="{{ cafeteria1["name"] }}">
+            <form method="post">
+                <button type="submit" name="winner" value="{{ cafeteria1['name'] }}">Escolher {{ cafeteria1["name"] }}</button>
+            </form>
+        </div>
+        <div class="cafeteria-card">
+            <h2>{{ cafeteria2["name"] }}</h2>
+            <img src="{{ cafeteria2["image"] }}" alt="{{ cafeteria2["name"] }}">
+            <form method="post">
+                <button type="submit" name="winner" value="{{ cafeteria2['name'] }}">Escolher {{ cafeteria2["name"] }}</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+

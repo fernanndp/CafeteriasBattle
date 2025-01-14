@@ -1,0 +1,86 @@
+/* Fonte 8-bit para toda a página */
+body {
+    font-family: 'Press Start 2P', cursive;  /* Fonte retrô para todo o site */
+    background-color: #f4f1de;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Títulos principais */
+h1 {
+    color: #3d405b;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Subtítulos e parágrafos */
+p, h2 {
+    font-size: 1.2rem;
+    color: #3d405b;
+    line-height: 1.6;
+}
+
+/* Container das batalhas */
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* Cartões de cafeterias */
+.cafeteria-card {
+    border: 3px solid #3d405b;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    margin-bottom: 20px;
+}
+
+/* Imagens das cafeterias */
+.cafeteria-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Botões */
+button {
+    font-family: 'Press Start 2P', cursive;  /* Mesma fonte retrô no botão */
+    margin-top: 10px;
+    padding: 15px 30px;
+    background-color: #81b29a;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a9d85;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Página inicial com o GIF de café */
+.start-container img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
